@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 5em;
+}
+
+div#calc {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 4px 15px 15px 15px;
+    width: 350px;
+    border-radius: 4px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: 'Silkscreen', cursive;
+    padding: 20px;
+}
+
+div#operations {
+    text-align: right;
+    background-color: rgb(221, 143, 0);
+    margin: 0px 6px 20px 6px;
+    padding: 10px;
+    border: 1px solid rgb(17, 17, 17);
+    box-shadow: inset -1.5px 1.5px 5px rgb(20, 20, 20);
+}
+
+div#previous{
+    color: rgb(72, 72, 72);
+    overflow-wrap: break-word;
+    padding: .15em;
+    min-height: 1.6em;
+}
+
+div#current{
+    overflow-wrap: break-word;
+    padding: .15em;
+    font-size: 2em;
+    font-weight: 700;
+    min-height: 1.5em;
+}
+
+
+
+#buttonscontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button {
+    height: 50px;
+    margin: 1.7px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.952);
+    border: none;
+    border-radius: 2px;
+}
+
+button#number{
+    background-color: black;
+    color: orange;
+}
+
+button#igual{
+    grid-column: span 2;
+    background-color: rgb(218, 120, 0);
+}
+
+button:hover, button#number:hover, button#igual:hover{
+    background-color: orange;
+    color: black;
+    transition: 0.8s;
+}
